@@ -19,7 +19,6 @@
 			<thead>
 				<tr>
 					<th>Name</th>
-					<th>View</th>
 					<th>Edit</th>
 					<th>Delete</th>
 				</tr>
@@ -28,8 +27,7 @@
 				<c:forEach var="member" items="${members}">
 					<tr>
 						<td>${member.name}</td>
-<%-- 						<td><a href="viewmember?memberid=${member.memberid}">View</a></td>
- --%>						<td><a href="editmember?memberid=${member.memberid}">Edit</a>
+						<td><a href="editmember?memberid=${member.memberid}">Edit</a>
 						<td><a href="deletemember?memberid=${member.memberid}"
 							onclick="myFunction()">Delete</a></td>
 					</tr>
